@@ -33,16 +33,3 @@ To get started with the Pintos Alarm Clock project, follow these steps:
     ```sh
     make check
     ```
-
-## Usage
-
-To use the alarm clock functionality in your Pintos projects, you can call the `timer_sleep` function with the number of ticks to sleep. For example:
-```c
-#include "threads/thread.h"
-#include "devices/timer.h"
-
-void some_function(void) {
-    printf("Thread going to sleep...\n");
-    timer_sleep(100); // Sleep for 100 ticks
-    printf("Thread woke up!\n");
-}
